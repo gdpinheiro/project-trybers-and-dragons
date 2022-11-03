@@ -1,5 +1,13 @@
 import Fighter from '../../src/Fighter';
 
-const f = (obj: Fighter): number => {
-  return obj.defense;
-}
+class f implements Fighter {
+  constructor(
+    public lifePoints: 100,
+    public strength: 10,
+  ) { }
+
+  attack(enemy: Fighter) { }
+  receiveDamage(amount: number) { }
+  levelUp(): void { }
+  special(enemy: Fighter): void { }
+};

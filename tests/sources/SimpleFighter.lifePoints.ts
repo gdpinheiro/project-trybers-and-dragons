@@ -1,5 +1,10 @@
 import { SimpleFighter } from '../../src/Fighter';
 
-const f = (obj: SimpleFighter): number => {
-  return obj.lifePoints;
-}
+class f implements SimpleFighter {
+  constructor(
+    public strength: 10,
+  ) { }
+
+  attack(enemy: SimpleFighter): void { }
+  receiveDamage(amount: number) { }
+};

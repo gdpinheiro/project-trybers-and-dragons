@@ -3,15 +3,15 @@ describe('08 - Interface SimpleFighter', () => {
     expect('SimpleFighter.exists').toCompile();
   });
   it('A interface SimpleFighter possui o atributo lifePoints', () => {
-    expect('SimpleFighter.lifePoints').toCompile();
+    expect('SimpleFighter.lifePoints').notToCompile();
   });
   it('A interface SimpleFighter possui o atributo strength', () => {
-    expect('SimpleFighter.strength').toCompile();
+    expect('SimpleFighter.strength').notToCompile();
   });
   it('A interface SimpleFighter possui o método attack, que recebe um enemy do tipo SimpleFighter', () => {
-    expect('SimpleFighter.attack').toCompile();
+    expect('SimpleFighter.attack').notToCompile();
   });
-  it('A interface SimpleFighter possui o método receiveDamage, que recebe um amount do tipo number', () => {
-    expect('SimpleFighter.receiveDamage').toCompile();
+  it('A interface SimpleFighter possui o método receiveDamage, que recebe um attackPoints do tipo number', () => {
+    expect('SimpleFighter.receiveDamage').notToCompile();
   });
 });
